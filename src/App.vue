@@ -1,32 +1,53 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+  <div>
+    <Navbar></Navbar>
+    <router-view />
   </div>
 </template>
 
+<script lang="ts">
+import { Component, Vue } from "vue-property-decorator";
+import Navbar from "@/components/navbar.vue";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap";
+
+@Component({
+  components: {
+    Navbar,
+  },
+})
+export default class App extends Vue {}
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+body {
+  padding-top: 4.5rem;
 }
 
-#nav {
-  padding: 30px;
+.primary-color {
+  color: #145e8c;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.success-color {
+  color: #41a63a;
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.bg-primary-color {
+  background-color: #145e8c;
+  color: #fff;
+}
+
+.btn-primary-color-outline {
+  border-color: #145e8c;
+  color: #145e8c;
+}
+
+.btn-primary-color-outline:hover {
+  background-color: #145e8c;
+  color: white;
+}
+.btn a {
+  text-decoration: none;
+  color: #fff;
 }
 </style>

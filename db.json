@@ -1,0 +1,57 @@
+{
+    "attraction": [
+        {
+            "id": 1,
+            "name": "Surf",
+            "parkId": 1,
+            "description": "la descrizione dei questa attrazione molto molto bella",
+            "averageTailTime": 10,
+            "openTime": "8.00",
+            "closeTime": "19.00",
+            "minimumAccessAge": 5
+        }
+    ],
+    "park": [
+        {
+            "id": 1,
+            "name": "Mirabollandia",
+            "attractionList": [
+                {
+                    "id": 1,
+                    "parkId": 1,
+                    "description": "la descrizione dei questa attrazione molto molto bella",
+                    "averageTailTime": 10,
+                    "openTime": "8.00",
+                    "closeTime": "19.00",
+                    "minimumAccessAge": 5
+                }
+            ],
+            "description":"la descrizione di questo park molto molto bella",
+            "openTime": "8.00",
+            "closeTime": "19.00",
+            "weather": [
+                {
+                    "date": "12/07/2021",
+                    "weather": "sunny",
+                    "temperature": 30
+                },
+                {
+                    "date": "13/07/2021",
+                    "weather": "sunny",
+                    "temperature": 29
+                },
+                {
+                    "date": "14/07/2021",
+                    "weather": "sunny",
+                    "temperature": 33
+                },
+                {
+                    "date": "15/07/2021",
+                    "weather": "sunny",
+                    "temperature": 36
+                }
+            ],
+            "parkingInformation": "Informazioni riguardo il parcheggio"
+        }
+    ]
+}
